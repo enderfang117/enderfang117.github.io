@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本来写了很多，但感觉都是废话，删了。观点就这点东西。 首先简单地用归谬法证明“波动率代表风险”这一命题的错误：风险代表金融资产带来长期不可逆转的损失的可能，此时设想一种下行风险极大，但交易量和波动率极小的标的资产，此时该标的波动率小，而风险极大。所以我们从已知事实推断出了矛盾的结果，从而证明命题错误。 波动不会产生“长期不可逆转的损失”的风险，不符合风险的定义，只是暂时性的影响。 总之：金融资产的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="波动率不代表风险 Volatility is not Ris">
+<meta property="og:url" content="http://example.com/2021/03/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%9F/index.html">
+<meta property="og:site_name" content="郭放的博客">
+<meta property="og:description" content="本来写了很多，但感觉都是废话，删了。观点就这点东西。 首先简单地用归谬法证明“波动率代表风险”这一命题的错误：风险代表金融资产带来长期不可逆转的损失的可能，此时设想一种下行风险极大，但交易量和波动率极小的标的资产，此时该标的波动率小，而风险极大。所以我们从已知事实推断出了矛盾的结果，从而证明命题错误。 波动不会产生“长期不可逆转的损失”的风险，不符合风险的定义，只是暂时性的影响。 总之：金融资产的">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-08-30T05:11:05.122Z">
+<meta property="article:author" content="Fang Guo">
+<meta property="article:tag" content="交易">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2021/03/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%9F/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/03/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%9F/","path":"2021/03/17/为什么波动率不代表风险？/","title":"波动率不代表风险 Volatility is not Ris"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>波动率不代表风险 Volatility is not Ris | 郭放的博客</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">郭放的博客</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Fang Guo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fang Guo">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="郭放的博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="波动率不代表风险 Volatility is not Ris | 郭放的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          波动率不代表风险 Volatility is not Ris
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-03-17 00:00:00" itemprop="dateCreated datePublished" datetime="2021-03-17T00:00:00+08:00">2021-03-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-08-30 13:11:05" itemprop="dateModified" datetime="2023-08-30T13:11:05+08:00">2023-08-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A4%E6%98%93/" itemprop="url" rel="index"><span itemprop="name">交易</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本来写了很多，但感觉都是废话，删了。观点就这点东西。</p>
+<p>首先简单地用归谬法证明“波动率代表风险”这一命题的错误：风险代表金融资产带来长期不可逆转的损失的可能，此时设想一种下行风险极大，但交易量和波动率极小的标的资产，此时该标的波动率小，而风险极大。所以我们从已知事实推断出了矛盾的结果，从而证明命题错误。</p>
+<p><strong>波动不会产生“长期不可逆转的损失”的风险，不符合风险的定义，只是暂时性的影响。</strong></p>
+<p>总之：金融资产的内在特征决定了它的<strong>风险特征</strong>，市场上所有交易者的行为和金融资产的风险特征决定了金融资产的<strong>波动</strong>。</p>
+<p>或者换句话说，风险是永久损失的可能，是资产内在价值、特征决定的；而波动是由资产的价值、特征和市场行为等多种因素决定的，还带有随机走动的特征。<strong>风险只是波动的决定因素之一。</strong></p>
+<p><strong>波动</strong>代表历史价格的变化程度，是对历史成交价格的描述，而非对风险的描述，和风险也不是一个东西。</p>
+<p>格雷厄姆直接就说“用波动率衡量风险是荒谬的”。这里引用巴菲特的话，他也有类似的观点：</p>
+<blockquote>
+<p><em>“Volatility is not a measure of risk. And the problem is that the  people who have written and taught about volatility do not know how to  measure — or, I mean, taught about risk — do not know how to measure  risk. And the nice about beta, which is a measure of volatility, is that it’s nice and mathematical and wrong in terms of measuring risk. It’s a measure of volatility, but past volatility does not determine the risk  of investing.”</em></p>
+</blockquote>
+<blockquote>
+<p><em>“I mean, actually, take it with farmland. Here in 1980, or in the early 1980s, farms that sold for $2,000 an acre went to $600 an acre. I bought one of the them when the  banking and farm crash took place. And the beta of farms shot way up.  And according to standard economic theory or market theory, I was buying a much more risk asset at $600 an acre than the same farm was at $2,000 an acre.</em></p>
+<p><em>Now, people, because farmland doesn’t  trade often and prices don’t get recorded, you know, they would regard  that as nonsense, that my purchase at $600 an acre of the same farm that sold for 2,000 an acre a few years ago was riskier. But in stocks,  because the prices jiggle around every minute, and because it lets the  people who teach finance use the mathematics they’ve learned, they have — in effect, they would explain this a way a little more technically —  but they have, in effect, translated volatility into all kinds of — past volatility — in terms of all kinds of measures of risk.”</em></p>
+</blockquote>
+<blockquote>
+<p><em>“Risk comes from the nature of certain kinds of businesses. It can  be risky to be in some businesses just by the simple economics of the  type of business you’re in, and it comes from not knowing what you’re  doing. And, you know, if you understand the economics of the business in which you are engaged, and you know the people with whom you’re doing  business, and you know the price you pay is sensible, you don’t run any  real risk.”</em></p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%BA%A4%E6%98%93/" rel="tag"># 交易</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/14/K%E7%BA%BF%E7%9A%84%E6%9C%AC%E8%B4%A8/" rel="prev" title="K线的本质">
+                  <i class="fa fa-angle-left"></i> K线的本质
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/03/18/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%88%E4%BA%8C%EF%BC%89/" rel="next" title="波动率不代表风险（二） Volatility is not Risk I">
+                  波动率不代表风险（二） Volatility is not Risk I <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Fang Guo</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
